@@ -1,0 +1,126 @@
+@import url("null.css");
+.wrapper {
+   max-width: 1000px;
+   margin: 20px auto 0 auto;
+}
+.main {
+   max-width: 100%;
+   min-height: 800px;   
+   background: lightpink;
+}
+.game div:nth-child(odd) {
+   background-color: blueviolet;
+}
+.game div:nth-child(even):not(:last-child)  {   
+   background-color: blue;   
+}
+.line1 {
+   width: 40px;
+   height: 40px;
+}
+.line2 {
+   width: 400px;
+   height: 50px;
+   visibility: hidden;
+}
+.line3 {
+   width: 50px;
+   height: 200px;
+   margin-left: 350px;
+   visibility: hidden;
+}
+.line4 {
+   width: 200px;
+   height: 50px;
+   margin-left: 350px;
+   visibility: hidden;
+}
+.line5 {
+   width: 50px;
+   height: 100px;
+   margin-left: 500px;
+   margin-top: -150px;
+   visibility: hidden;
+}
+.line6 {
+   width: 200px;
+   height: 50px;
+   margin-left: 500px;
+   margin-top: -150px;
+   visibility: hidden;
+}
+.line7 {
+   width: 50px;
+   height: 300px;
+   margin-left: 650px;
+   visibility: hidden;
+}
+.line8 {
+   width: 600px;
+   height: 50px;
+   margin-left: 100px;
+   visibility: hidden;
+}
+.line9 {
+   width: 50px;
+   height: 100px;
+   margin-left: 100px;
+   visibility: hidden;
+}
+.line10 {
+   width: 100px;
+   height: 100px;
+   color: black;
+   font-size: 40px;
+   text-align: center;
+   text-decoration: underline;
+   margin-left: 100px;
+   background-color: chartreuse;
+   visibility: hidden;
+}
+.line1:hover + .line2,
+.line2:hover{
+   visibility: visible;
+}
+.line2:hover + .line3,
+.line3:hover {
+   visibility: visible;
+}
+.line3:hover + .line4,
+.line4:hover {
+   visibility: visible;
+}
+.line4:hover + .line5,
+.line5:hover {
+   visibility: visible;
+}
+.line5:hover + .line6,
+.line6:hover {
+   visibility: visible;
+}
+.line6:hover + .line7,
+.line7:hover {
+   visibility: visible;
+}
+.line7:hover + .line8,
+.line8:hover {
+   visibility: visible;
+}
+.line8:hover + .line9,
+.line9:hover {
+   visibility: visible;
+}
+.line9:hover + .line10,
+.line10:hover {
+   visibility: visible;
+}
+.image {
+   margin: -600px auto auto 200px;
+   display: none;
+}
+.image img {   
+   max-width: 600px;
+}
+#image:target {
+   display: block;
+}
